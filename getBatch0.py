@@ -2,9 +2,9 @@ import os
 import shutil
 
 # Define paths
-source_folder = 'CVR_Export_20201201091840'
-target_folder = 'batch0'
-files_list_path = 'hw2-2.txt'
+source_folder = 'Alaska_2022'
+target_folder = 'batch0_AK_2022'
+files_list_path = 'alaska_batch0_2022.txt'
 
 # Create target folder if it doesn't exist
 if not os.path.exists(target_folder):
