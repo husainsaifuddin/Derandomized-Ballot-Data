@@ -605,3 +605,4 @@ Skipping tabulator id 545
 Skipping tabulator id 596
 Skipping tabulator id 606
 Final json successfully created
+[38, 64, 67, 114, 120, 121, 133, 135, 187, 197, 198, 225, 226, 227, 238, 248, 250, 319, 328, 395, 400, 401, 477, 498, 499, 517, 545, 582, 593, 596, 606, 607, 616, 618,]
