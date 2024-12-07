@@ -57,11 +57,11 @@ colors = ['purple', 'blue']  # Blue for Wiener, Purple for Fielder
 grouped.plot(kind='bar', figsize=(12, 6), width=0.8, color=colors)
 
 # Customize the plot
-plt.title("Vote Distribution by Hour California Senate District 11 (Wiener vs. Fielder)")
+plt.title("Vote Distribution by Hour 2020 California Senate District 11 (Wiener vs. Fielder)")
 plt.xlabel("Hour of the Day")
 plt.ylabel("Number of Votes")
 plt.xticks(ticks=range(len(grouped.index)), labels=[f"{int(hour)}:00-{int(hour+1)}:00" for hour in grouped.index], rotation=45)
 plt.legend(title="Candidate")
 plt.tight_layout()
 plt.grid(axis='y')
-plt.savefig('state_senate_11_bar_graph.png')
+plt.savefig('2020state_senate_11_bar_graph.png')

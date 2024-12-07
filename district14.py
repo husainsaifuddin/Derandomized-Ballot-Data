@@ -57,12 +57,12 @@ colors = ['blue', 'red']  # Blue for speier, Red for petel
 grouped.plot(kind='bar', figsize=(12, 6), width=0.8, color=colors)
 
 # Customize the plot
-plt.title("Vote Distribution by Hour US House California District 14 (Petel vs. Speier)")
+plt.title("Vote Distribution by Hour 2020 US House California District 14 (Petel vs. Speier)")
 plt.xlabel("Hour of the Day")
 plt.ylabel("Number of Votes")
 plt.xticks(ticks=range(len(grouped.index)), labels=[f"{int(hour)}:00-{int(hour+1)}:00" for hour in grouped.index], rotation=45)
 plt.legend(title="Candidate")
 plt.tight_layout()
 plt.grid(axis='y')
-plt.savefig('house_district_14_bar_graph.png')
+plt.savefig('2020house_district_14_bar_graph.png')
 
