@@ -9,7 +9,7 @@ folder_path = "batch0_SF"
 # Initialize a DataFrame to store vote data
 vote_data = []
 skip_ids = [38, 64, 67, 114, 120, 121, 133, 135, 187, 197, 198, 225, 226, 227, 238, 248, 
-            250, 319, 328, 395, 400, 401, 477, 499, 517, 545, 582, 593, 596, 606, 607, 616, 618]
+            250, 319, 328, 395, 400, 401, 477, 498, 499, 517, 545, 582, 593, 596, 606, 607, 616, 618]
 # Iterate through each file in the folder
 for filename in os.listdir(folder_path):
     if filename.endswith(".json"):
@@ -62,7 +62,6 @@ plt.xlabel("Hour of the Day")
 plt.ylabel("Number of Votes")
 plt.xticks(ticks=range(len(grouped.index)), labels=[f"{int(hour)}:00-{int(hour+1)}:00" for hour in grouped.index], rotation=45)
 plt.legend(title="Candidate")
-plt.xlim(6, 19)
 plt.tight_layout()
 plt.grid(axis='y')
 plt.savefig('presidential_bar_graph.png')
